@@ -142,6 +142,14 @@ header .header-projects {
     display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+    header .header-logo {
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
 .index-banner {
     width: 100%;
     /* Device height 100vh is equal to the decice height*/
@@ -197,4 +205,49 @@ header .header-projects {
     color: #111;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    width: calc(100% - 80px);
+    height: 80px;
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    /*Very useful if I have more  float right/lefts inside */
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 26px;
+    color: #f3f3f3;
+    line-height: 30px;
+}
+
+.footer-additional-links {
+    display: none;
+}
+
+.footer-images {
+    width: 40px;
+    float: right;
+    background-color: #f3f3f3;
+    padding: 5px 15px 5px 15px;
+}
+
+.footer-images img {
+    width: 100%;
 }
