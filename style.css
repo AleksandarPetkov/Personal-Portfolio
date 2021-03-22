@@ -101,9 +101,7 @@ input, select {
     text-decoration: none;
 }
 
-body {
-    background-color: #f3f3f3;
-}
+
 
 header {
     background-color: #fff;
@@ -153,16 +151,23 @@ header .header-projects {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /*Center display/table/table-cell/vertical-align-middle*/
+    display: table;
+}
+
+.vertical-center {
+    /*Center display/table/table-cell/vertical-align-middle*/
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .index-banner h2 {
     font-family: 'Catamaran', sans-serif;
     font-size: 60px;
-    color: #f3f3f3;
-    text-align: center;
-    line-height: 70px;
     font-weight: 90;
-    padding-top: 25px;
+    color: #f3f3f3;
+    line-height: 70px;
+    text-align: center;
     text-shadow: 2px 2px 8px #111;
 }
 
@@ -175,4 +180,21 @@ header .header-projects {
     color: #f3f3f3;
     text-align: center;
     text-shadow: 2px 2px 8px #111;
+}
+
+.index-link-boxes div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #EDECEC;
+}
+
+.index-link-boxes div h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 28px;
+    font-weight: 510;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
 }
