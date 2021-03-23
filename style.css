@@ -101,8 +101,6 @@ input, select {
     text-decoration: none;
 }
 
-
-
 header {
     background-color: #fff;
     width: 100%;
@@ -136,24 +134,52 @@ header nav ul li a {
     font-family: 'Catamaran', sans-serif;
     font-size: 16px;
     color: #111;
+    text-transform: uppercase;
 }
 
 header .header-projects {
     display: none;
 }
 
+/* Media query for header */
 @media only screen and (min-width: 1000px) {
+
     header .header-logo {
-        margin: 0 auto;
-        text-align: center;
-        padding: 20px 0;
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 2px;
+        float: left;
+    }
+    
+    header nav ul li a {
+        line-height: 60px;
+    }
+    
+    header .header-projects {
+        display: block;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0px 20px;
     }
 }
 
 .index-banner {
     width: 100%;
-    /* Device height 100vh is equal to the decice height*/
-    /* height: 100vh; */
+    /* 100vh is equal to the decice screen height*/
     height: calc(100vh - 100px);
     background-image: url(img/developer.jpg);
     background-repeat: no-repeat;
@@ -205,6 +231,20 @@ header .header-projects {
     color: #111;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* Media query for main sections */
+@media only screen and (min-width: 1000px) {
+
+    .index-banner {
+        height: 500px;
+    }
+
+    .index-banner h1 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+    }
 }
 
 /* FOOTER */
