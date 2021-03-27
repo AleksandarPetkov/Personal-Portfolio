@@ -2,82 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Personal Portfolio</title>
+        <title>A.Petkov Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        
     <head>
     <body>
 
         <header>
-            <a id="upper-index" href="index.html" class="header-logo">A.Petkov</a>
+            <a href="index.html" class="header-logo"><img class="logo-img" src="img/logo.PNG" alt="logo img"></a>
             <nav>
                 <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="portfolio.html">Home</a></li>
                     <li><a href="about.html">About me</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="contacts.html">Skills</a></li>
                 </ul>
             </nav>
-            <a href="projects.html" class="header-projects">Projects</a>
+            <a href="projects.html" class="header-download">Download CV</a>
         </header>
 
         <main>
             <section class="index-banner">
                 <div class="vertical-center">
-                    <h2>I'm Java Web Developer</h2>
+                    <p><img class="profile-picture" src="img/profile.png" alt="profile picture"></p>               
+                    <h2 class="into-text">Hello, my name is Aleksandar</h2>
+                    <h2 class="typing-text">I'm a <span class="typing"></span> Web Developer</h2>
                     <h1>With speciality in Java, Spring Framework, SQL, Java Script, Angular and more...</h1>
                 </div>
             </section>
 
-            <div class="wrapper">
-                <section class="index-link-boxes">
-                    <a href="projects.html">
-                        <div class="index-box-squere">
-                            <h3>Projects</h3>
-                        </div>
-                    </a>
-                    <a href="portfolio.html">
-                        <div class="index-box-rectangle">
-                            <h3>Portfolio</h3>
-                        </div>
-                    </a>
-                    <a href="about.html">
-                        <div class="index-box-squere">
-                            <h3>About</h3>
-                        </div>
-                    </a>
-                    <a href="contacts.html">
-                        <div class="index-whole-line">
-                            <h3>Contacts</h3>
-                        </div>
-                    </a>
-                </section>
-            </div>
-        </main>
-        <div class="wrapper-footer">
-            <footer>
-                <ul class="footer-main-links">
-                    <li><a href="#upper-index">Home</a></li>
-                    <li><a href="https://www.linkedin.com/in/aleksandar-petkov-05a4a516a/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/AleksandarPetkov" target="_blank">GitHub</a></li>
-                </ul>
-    
-                <ul class="footer-additional-links">
-                    <li><p>TODO</p></li>
-                    <li><a href=""> TODO Add additional information 1</a></li>
-                    <li><a href=""> TODO Add additional information 2</a></li>
-                </ul>
-    
-                <div class="footer-images">
-                    <a href="https://www.linkedin.com/in/aleksandar-petkov-05a4a516a/" target="_blank">
-                       <img src="img/linkedin.png" alt="linkedin logo">
-                    </a>
-                    <a href="https://github.com/AleksandarPetkov" target="_blank">
-                        <img src="img/github.png" alt="github logo">
-                    </a>
-                </div>
-            </footer>
-        </div>
+        <script src="script.js"></script>
     </body>
 </html>

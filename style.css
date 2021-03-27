@@ -96,32 +96,31 @@ input, select {
 }
 
 /* END RESET STYLESHEET */
+/* Mobile Version */
 
 * {
     text-decoration: none;
 }
 
+main {
+    padding-top: 100px;
+}
+
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #fff;
     width: 100%;
     height: 100px;
-}
-
-header .header-logo {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    color: #111;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0;
 }
 
 header nav ul {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    padding-top: 0;
 }
 
 header nav ul li {
@@ -137,11 +136,11 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-header .header-projects {
+header .header-download {
     display: none;
 }
 
-/* Media query for header */
+/*Desktop version media query for header */
 
 @media only screen and (min-width: 1000px) {
 
@@ -163,7 +162,7 @@ header .header-projects {
         line-height: 60px;
     }
     
-    header .header-projects {
+    header .header-download {
         display: block;
         font-family: 'Catamaran', sans-serif;
         font-size: 16px;
@@ -176,13 +175,17 @@ header .header-projects {
         margin-top: 30px;
         padding: 0px 20px;
     }
+
+    header .header-download:hover {
+        background-color: #C6CAD6;
+    }
 }
 
 .index-banner {
     width: 100%;
     /* 100vh is equal to the decice screen height*/
     height: calc(100vh - 100px);
-    background-image: url(img/developer.jpg);
+    background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -217,34 +220,12 @@ header .header-projects {
     text-shadow: 2px 2px 8px #111;
 }
 
-.index-link-boxes div {
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #EDECEC;
-}
-
-.index-link-boxes div h3 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 28px;
-    font-weight: 510;
-    line-height: 100px;
-    color: #111;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-/* Media query for main section */
+/* Desktop version media query for main section */
 
 @media only screen and (min-width: 1000px) {
 
     .wrapper {
         width: 1000px;
-        margin: 0 auto;
-    }
-
-    .wrapper-footer {
-        width: 970px;
         margin: 0 auto;
     }
 
@@ -257,96 +238,48 @@ header .header-projects {
         width: 560px;
         margin: 0 auto;
     }
-
-    .index-link-boxes div {
-        margin: 16px 16px 0;
-        height: 250x;
-        background-color: #EDECEC;
-        float: left;
-    }
-
-    .index-link-boxes {
-        /* i have a lot of float elements and I use overflow */
-        overflow: hidden;
-    }
-
-    .index-box-squere {
-        width: 25% !important;
-    }
-
-    .index-box-rectangle {
-        width: 40% !important;
-    }
-
-    .index-whole-line {
-        width: 80% ;
-    }
-    
 }
 
-/* FOOTER */
 
-footer {
-    width: calc(100% - 80px);
-    height: 80px;
-    padding: 40px 40px;
-    margin-top: 20px;
-    background-color: #111;
-    /*Very useful if I have more  float right/lefts inside */
-    overflow: hidden;
-}
+/* Last Changes */
 
-footer ul {
-    width: fit-content;
-    float: left;
-    padding-left: 20px;
-}
-
-footer ul li {
+.profile-picture {
     display: block;
-    list-style: none;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f3f3f3;
+    transition: all 0.3s ease;
+    margin: 0 auto
 }
 
-footer ul li a{
+.profile-picture:hover {
+    border-color: #C6CAD6;
+}
+
+.index-banner .vertical-center .typing-text span {
+    color: #C6CAD6; 
+}
+
+.index-banner .vertical-center .into-text {
     font-family: 'Catamaran', sans-serif;
-    font-size: 26px;
+    font-size: 45px;
+    font-weight: 40;
     color: #f3f3f3;
-    line-height: 30px;
+    line-height: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
 }
 
-.footer-additional-links {
-    display: none;
+.logo-img {
+    display: block;
+    height: 60px;
+    width: 60x;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
-.footer-images {
-    width: 40px;
-    float: right;
-    background-color: #f3f3f3;
-    padding: 5px 15px 5px 15px;
-}
-
-.footer-images img {
-    width: 100%;
-}
-
-/* Media query for footer*/
-
-@media only screen and (min-width: 1000px) {
-
-    .footer-additional-links {
-        display: block;
-    }
-
-    footer ul {
-        width: fit-content;
-        float: left;
-        padding-left: 20px;
-    }
-    
-    footer ul li p{
-        font-family: 'Catamaran', sans-serif;
-        font-size: 26px;
-        color: #f3f3f3;
-        line-height: 30px;
-    }
+header nav ul li a:hover {
+    color: #C6CAD6;
 }
