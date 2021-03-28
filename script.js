@@ -24,5 +24,19 @@ $(document).ready(function(){
         loop: true
     });
 
+    var typed = new Typed(".typing-2", {
+        strings: ["Java", "Full Stack"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
+
+    // Typing text animation script
+
+
+    $('.download-cv').click(function(e) {
+        e.preventDefault(); 
+        window.location.href = 'cv/AleksandarPetkovResume.docx';
+    });
 });
