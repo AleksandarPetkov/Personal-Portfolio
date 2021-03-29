@@ -476,35 +476,55 @@ header nav ul li a:hover {
 .contact .style-text::after{
     content: "get in touch";
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
+
+.contact-static-icons ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
 }
+
+.contact-static-icons ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 40px;
+}
+
 .contact .contact-content .head{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p{
-    text-align: justify;
-}
+
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .row{
+.contact .contact-static-icons .row{
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+
+.contact .contact-static-icons .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+
+.contact .contact-static-icons .row i{
     font-size: 25px;
     color: #5073AE;
 }
-.contact .contact-content .info .head{
-    font-weight: 500;
+
+.contact .contact-static-icons .row  .info .head{
+    font-weight: 600;
 }
-.contact .contact-content .info .sub-title{
+
+.contact .contact-static-icons .info .sub-title{
     color: #333;
+}
+
+.contact .contact-static-icons .info span{
+    color: #333;
+}
+
+.contact-wrapper {
+    margin-top: 40px;
 }

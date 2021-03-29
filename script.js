@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
 
 
-    // Typing text animation script
+    // Download CV
 
 
     $('.download-cv').click(function(e) {
