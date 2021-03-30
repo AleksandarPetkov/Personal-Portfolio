@@ -528,3 +528,11 @@ header nav ul li a:hover {
 .contact-wrapper {
     margin-top: 40px;
 }
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
